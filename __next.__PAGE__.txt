@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-6:I[9312,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_next/static/chunks/04kanig9crzdo.js","/Auratekk-V2/_next/static/chunks/10d-1gd_3h42q.js"],"HeroSectionClient"]
-a:I[83556,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_next/static/chunks/04kanig9crzdo.js"],"OutletBoundary"]
+6:I[9312,["_next/static/chunks/0sof7.-y~8jlf.js","_next/static/chunks/04kanig9crzdo.js","_next/static/chunks/10d-1gd_3h42q.js"],"HeroSectionClient"]
+a:I[83556,["_next/static/chunks/0sof7.-y~8jlf.js","_next/static/chunks/04kanig9crzdo.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-d:I[29463,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_next/static/chunks/04kanig9crzdo.js","/Auratekk-V2/_next/static/chunks/10d-1gd_3h42q.js"],"GoogleReviewsDynamic"]
+d:I[29463,["_next/static/chunks/0sof7.-y~8jlf.js","_next/static/chunks/04kanig9crzdo.js","_next/static/chunks/10d-1gd_3h42q.js"],"GoogleReviewsDynamic"]
 2:Te817,<header id="main-header"
             class="fixed top-0 z-50 w-full border-b border-white/5 bg-white/1 dark:bg-black/1 backdrop-blur-2xl transition-all duration-300 group/header hover:bg-white/5 dark:hover:bg-black/5 [&.scrolled]:bg-white/90 [&.scrolled]:shadow-lg dark:[&.scrolled]:bg-black/90">
             <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
@@ -10,10 +10,10 @@ d:I[29463,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_ne
                     <a href="index.html" class="logo-placeholder">
                         <img alt="auratekk_light"
                             class="block dark:hidden h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
-                            src="/Auratekk-V2/AURATEKK_LIGHT.svg" />
+                            src="AURATEKK_LIGHT.svg" />
                         <img alt="auratekk_dark"
                             class="hidden dark:block h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
-                            src="/Auratekk-V2/AURATEKK_DARK.svg" />
+                            src="AURATEKK_DARK.svg" />
                     </a>
                 </div>
                 <nav class="hidden lg:flex items-center gap-8 h-full">
@@ -409,9 +409,9 @@ d:I[29463,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_ne
             <div class="flex items-center justify-between p-6 border-b border-black/5 dark:border-white/5">
                 <a href="index.html" class="logo-placeholder">
                     <img alt="auratekk_dark" class="hidden dark:block h-8 w-auto object-contain"
-                        src="/Auratekk-V2/AURATEKK_DARK.svg" />
+                        src="AURATEKK_DARK.svg" />
                     <img alt="auratekk_light" class="block dark:hidden h-8 w-auto object-contain"
-                        src="/Auratekk-V2/AURATEKK_LIGHT.svg" />
+                        src="AURATEKK_LIGHT.svg" />
                 </a>
                 <button id="mobile-menu-close" aria-label="Close Mobile Menu"
                     class="p-2 rounded-full border border-black/10 dark:border-white/10 text-slate-900 dark:text-white">
@@ -1279,7 +1279,7 @@ d:I[29463,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_ne
                     </div>
                 </div>
             </section>3:["$","main",null,{"className":"flex-1","suppressHydrationWarning":true,"children":[["$","div",null,{"className":"hero-section-wrapper","children":["$","$L6",null,{}]}],["$","div",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"$7"}}],"$L8","$L9"]}]
-4:["$","script","script-0",{"src":"/Auratekk-V2/_next/static/chunks/10d-1gd_3h42q.js","async":true}]
+4:["$","script","script-0",{"src":"_next/static/chunks/10d-1gd_3h42q.js","async":true}]
 5:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 8:["$","$Ld",null,{}]
 e:T101a9,<section class="py-32 relative bg-transparent overflow-hidden">
@@ -1888,9 +1888,9 @@ e:T101a9,<section class="py-32 relative bg-transparent overflow-hidden">
                 <div class="flex flex-col items-center md:items-start space-y-4">
                     <div class="logo-placeholder">
                         <img alt="auratekk_dark" class="hidden dark:block h-10 w-auto object-contain"
-                            src="/Auratekk-V2/AURATEKK_DARK.svg" />
+                            src="AURATEKK_DARK.svg" />
                         <img alt="auratekk_light" class="block dark:hidden h-10 w-auto object-contain"
-                            src="/Auratekk-V2/AURATEKK_LIGHT.svg" />
+                            src="AURATEKK_LIGHT.svg" />
                     </div>
                     <p
                         class="font-mono text-xs text-slate-500 dark:text-slate-400 text-center md:text-left leading-relaxed">

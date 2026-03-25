@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/Auratekk-V2//_next/:path+",
-        "destination": "/Auratekk-V2/_next/:path+"
+        "source": "/_next/:path+",
+        "destination": "_next/:path+"
       }
     ],
     "fallback": []

@@ -22,9 +22,27 @@
     <script src="../content_payload.js"></script>
     <script src="../script.js" defer></script>
     <link rel="stylesheet" href="../style.css">
+
+    <script>
+        (function() {
+            if (sessionStorage.getItem('preloaderShown')) {
+                document.documentElement.classList.add('hide-preloader');
+            }
+        })();
+    </script>
 </head>
 
 <body
+    <!-- Loading Screen -->
+    <div id="preloader" class="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center transition-opacity duration-600">
+        <div class="relative w-64 h-[2px] bg-white/10 rounded-full overflow-hidden mb-4">
+            <div id="preloader-bar" class="absolute top-0 left-0 h-full bg-accent-gold w-full origin-left"></div>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+            <h1 class="font-display font-bold text-2xl text-white tracking-[0.2em] uppercase">Aura Tekk</h1>
+            <p class="font-mono text-[10px] text-accent-gold tracking-[0.5em] uppercase opacity-50">Engineering Excellence</p>
+        </div>
+    </div>
     class="bg-slate-50/50 dark:bg-background-dark font-body text-slate-600 dark:text-slate-300 antialiased selection:bg-accent-purple selection:text-black overflow-x-hidden">
 
     <!-- Light Mode Background (Frosted Glass & Trading Colors) -->

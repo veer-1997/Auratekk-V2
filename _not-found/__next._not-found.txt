@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[13393,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_next/static/chunks/04kanig9crzdo.js"],"default"]
-3:I[85524,["/Auratekk-V2/_next/static/chunks/0sof7.-y~8jlf.js","/Auratekk-V2/_next/static/chunks/04kanig9crzdo.js"],"default"]
+2:I[13393,["_next/static/chunks/0sof7.-y~8jlf.js","_next/static/chunks/04kanig9crzdo.js"],"default"]
+3:I[85524,["_next/static/chunks/0sof7.-y~8jlf.js","_next/static/chunks/04kanig9crzdo.js"],"default"]
 4:[]
 0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"YTl9sO-lFDhmVfLYJvt2O"}

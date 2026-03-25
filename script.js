@@ -98,7 +98,37 @@ function initThemeAndMisc() {
             });
         });
     }
+
+    // --- Preloader Logic ---
+    handlePreloader();
 }
+
+function handlePreloader() {
+    const preloader = document.getElementById('preloader');
+    if (!preloader) return;
+
+    // Check if preloader has already been shown in this session
+    if (sessionStorage.getItem('preloaderShown')) {
+        preloader.style.display = 'none';
+        document.body.classList.remove('overflow-hidden');
+        return;
+    }
+
+    // Set flag for current session
+    sessionStorage.setItem('preloaderShown', 'true');
+
+    // Start fade-out after 1.8s
+    setTimeout(() => {
+        preloader.classList.add('fade-out');
+    }, 1800);
+
+    // Remove from display after 2.4s
+    setTimeout(() => {
+        preloader.style.display = 'none';
+        document.body.classList.remove('overflow-hidden');
+    }, 2400);
+}
+
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initThemeAndMisc);
@@ -736,3 +766,33 @@ window.openServiceModal = openServiceModal;
 window.closeServiceModal = closeServiceModal;
 if (typeof openContactModal !== 'undefined') window.openContactModal = openContactModal;
 if (typeof closeContactModal !== 'undefined') window.closeContactModal = closeContactModal;
+
+// --- Industry Card Interactive Glow ---
+function initIndustryCardGlow() {
+    const cards = document.querySelectorAll('.industry-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+}
+
+// Initialize on load and on DOM changes
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initIndustryCardGlow);
+} else {
+    setTimeout(initIndustryCardGlow, 200);
+}
+
+const industryObserver = new MutationObserver(() => {
+    if (document.querySelector('.industry-card:not([style*="--mouse-x"])')) {
+        initIndustryCardGlow();
+    }
+});
+industryObserver.observe(document.body, { childList: true, subtree: true });
