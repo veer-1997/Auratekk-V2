@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Chain | The Future of Decentralization</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js (for potential 3D effects if needed, though we might stick to CSS/Images for speed) -->
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-[#0f0] overflow-x-hidden font-mono selection:bg-[#0f0] selection:text-black">
+
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg" class="fixed top-0 left-0 w-full h-full z-0 opacity-20 pointer-events-none"></canvas>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 border-b border-[#0f0]/20 bg-black/80 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <span class="material-symbols-outlined text-[#0f0] group-hover:animate-spin">token</span>
+                <span
+                    class="font-display text-xl tracking-widest uppercase text-white group-hover:text-[#0f0] transition-colors">Cipher<span
+                        class="text-[#0f0]">.Chain</span></span>
+            </div>
+
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#nodes"
+                    class="hover:text-[#0f0] hover:underline decoration-[#0f0] underline-offset-4 transition-all">Nodes</a>
+                <a href="#tokenomics"
+                    class="hover:text-[#0f0] hover:underline decoration-[#0f0] underline-offset-4 transition-all">Tokenomics</a>
+                <a href="#roadmap"
+                    class="hover:text-[#0f0] hover:underline decoration-[#0f0] underline-offset-4 transition-all">Roadmap</a>
+            </div>
+
+            <div class="flex gap-4">
+                <button
+                    class="px-6 py-2 border border-[#0f0] text-[#0f0] text-sm hover:bg-[#0f0] hover:text-black transition-all duration-300 font-bold tracking-wider glitch-effect"
+                    data-text="CONNECT_WALLET">
+                    CONNECT_WALLET
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6">
+                <div
+                    class="inline-block border border-[#0f0]/50 px-4 py-1 bg-[#0f0]/5 text-[#0f0] text-xs tracking-[0.2em] relative overflow-hidden">
+                    <span class="relative z-10">SYSTEM_STATUS: ONLINE</span>
+                    <div class="absolute inset-0 bg-[#0f0]/10 transform -translate-x-full animate-scan"></div>
+                </div>
+
+                <h1 class="font-display text-6xl md:text-8xl font-bold leading-none text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 glitch-text"
+                    data-text="DECENTRALIZE EVERYTHING">
+                    DECENTRALIZE<br>
+                    <span class="text-[#0f0] text-shadow-neon">EVERYTHING</span>
+                </h1>
+
+                <p class="text-gray-400 text-lg max-w-xl font-light border-l-2 border-[#0f0] pl-6">
+                    The next evolution of consensus. Secure, scalable, and truly anonymous. Join the network node
+                    revolution.
+                </p>
+
+                <div class="flex gap-4 pt-8">
+                    <button
+                        class="px-8 py-4 bg-[#0f0] text-black font-bold tracking-widest hover:shadow-[0_0_30px_#0f0] transition-shadow clip-path-button">
+                        INITIATE_PROTOCOL
+                    </button>
+                    <button
+                        class="px-8 py-4 border border-white/20 text-white font-bold tracking-widest hover:border-[#0f0] hover:text-[#0f0] transition-colors clip-path-button">
+                        READ_WHITEPAPER
+                    </button>
+                </div>
+
+                <!-- Live Ticker -->
+                <div
+                    class="mt-12 py-4 border-y border-white/10 flex items-center gap-8 overflow-hidden whitespace-nowrap opacity-70">
+                    <span class="text-xs text-gray-500">BTC/USD <span class="text-[#0f0]">$98,420.50</span></span>
+                    <span class="text-xs text-gray-500">ETH/USD <span class="text-[#0f0]">$6,210.15</span></span>
+                    <span class="text-xs text-gray-500">CPR/USD <span class="text-[#0f0]">$0.42</span></span>
+                    <span class="text-xs text-gray-500">BLOCK_HEIGHT <span class="text-white">19,204,501</span></span>
+                    <span class="text-xs text-gray-500">HASH_RATE <span class="text-white">450 EH/s</span></span>
+                </div>
+            </div>
+
+            <div class="relative h-[600px] flex items-center justify-center">
+                <!-- Glowing 3D Coin (CSS Replacement) -->
+                <div class="relative w-[400px] h-[400px] animate-float-slow perspective-1000">
+                    <div class="w-full h-full relative preserve-3d animate-spin-3d">
+                        <!-- Front Face -->
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-600 via-yellow-400 to-yellow-700 border-4 border-[#0f0] flex items-center justify-center backface-hidden shadow-[0_0_50px_rgba(34,197,94,0.4)]">
+                            <div
+                                class="w-[80%] h-[80%] rounded-full border-2 border-dashed border-black/50 flex items-center justify-center bg-yellow-400/20 backdrop-blur-sm">
+                                <span
+                                    class="material-symbols-outlined text-9xl text-black drop-shadow-lg">currency_bitcoin</span>
+                            </div>
+                        </div>
+                        <!-- Back Face -->
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-700 via-yellow-400 to-yellow-600 border-4 border-[#0f0] flex items-center justify-center backface-hidden transform rotate-y-180 shadow-[0_0_50px_rgba(34,197,94,0.4)]">
+                            <div
+                                class="w-[80%] h-[80%] rounded-full border-2 border-dashed border-black/50 flex items-center justify-center bg-yellow-400/20 backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-9xl text-black drop-shadow-lg">token</span>
+                            </div>
+                        </div>
+                        <!-- Side/Edge (Simulated with multiple layers or just shadow, keeping simple for now) -->
+                    </div>
+                </div>
+
+                <!-- Holographic Floor -->
+                <div
+                    class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[120%] h-20 bg-gradient-to-t from-[#0f0]/20 to-transparent blur-xl rounded-[100%] transform scale-y-25">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Node Network Section -->
+    <section id="nodes" class="py-32 relative bg-black overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <!-- CSS Grid Pattern -->
+            <div
+                class="absolute inset-0 bg-[linear-gradient(to_right,#0f0_1px,transparent_1px),linear-gradient(to_bottom,#0f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="border border-[#0f0]/20 bg-black/80 p-8 backdrop-blur-md hover:border-[#0f0] transition-colors group">
+                    <span
+                        class="material-symbols-outlined text-4xl text-[#0f0] mb-6 group-hover:scale-110 transition-transform">hub</span>
+                    <h3 class="font-display text-2xl text-white mb-4">Sharded Nodes</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Parallel processing architecture allowing linear
+                        scalability with network growth.</p>
+                </div>
+                <div
+                    class="border border-[#a855f7]/20 bg-black/80 p-8 backdrop-blur-md hover:border-[#a855f7] transition-colors group">
+                    <span
+                        class="material-symbols-outlined text-4xl text-[#a855f7] mb-6 group-hover:scale-110 transition-transform">lock_clock</span>
+                    <h3 class="font-display text-2xl text-white mb-4">Zero Knowledge</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Mathematical proofs ensuring transaction validity
+                        without revealing sensitive data.</p>
+                </div>
+                <div
+                    class="border border-white/20 bg-black/80 p-8 backdrop-blur-md hover:border-white transition-colors group">
+                    <span
+                        class="material-symbols-outlined text-4xl text-white mb-6 group-hover:scale-110 transition-transform">deployed_code</span>
+                    <h3 class="font-display text-2xl text-white mb-4">Smart Contracts</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Turing-complete execution environment compatible
+                        with EVM and WASM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-32 bg-black border-t border-[#0f0]/10">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-display text-4xl text-white mb-16 text-center">PROTOCOL_ROADMAP</h2>
+
+            <div class="relative border-l border-[#0f0]/30 ml-4 space-y-12">
+                <!-- Phase 1 -->
+                <div class="relative pl-12">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#0f0] rounded-full shadow-[0_0_10px_#0f0]">
+                    </div>
+                    <span class="text-xs text-[#0f0] tracking-widest mb-2 block">PHASE_01 // COMPLETED</span>
+                    <h3 class="text-2xl text-white font-bold mb-4">Genesis Block</h3>
+                    <p class="text-gray-500 max-w-md">Initial network launch, whitepaper release, and seed validator
+                        onboarding.</p>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="relative pl-12">
+                    <div
+                        class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#0f0] rounded-full shadow-[0_0_10px_#0f0] animate-pulse">
+                    </div>
+                    <span class="text-xs text-[#0f0] tracking-widest mb-2 block">PHASE_02 // ACTIVE</span>
+                    <h3 class="text-2xl text-white font-bold mb-4">Mainnet Beta</h3>
+                    <p class="text-gray-500 max-w-md">Public participation enabled, smart contract deployment, bridge
+                        integration.</p>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="relative pl-12 opacity-50">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-700 rounded-full"></div>
+                    <span class="text-xs text-gray-500 tracking-widest mb-2 block">PHASE_03 // UPCOMING</span>
+                    <h3 class="text-2xl text-white font-bold mb-4">Global Governance</h3>
+                    <p class="text-gray-500 max-w-md">Transition to fully decentralized DAO governance and treasury
+                        management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-[#0f0]/10 bg-black text-center">
+        <p class="text-xs text-gray-600 font-mono">ENCRYPTED CONNECTION ESTABLISHED // CIPHER CHAIN 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

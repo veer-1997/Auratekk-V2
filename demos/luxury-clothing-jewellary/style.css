@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --color-gold: #E6C2BF;
+    /* Rose Gold */
+    --color-gold-accent: #D4AF37;
+    /* Classic Gold */
+    --color-bg: #1a0505;
+    /* Deepest Burgundy/Black */
+    --color-burgundy: #4a0e16;
+    --color-text: #f3f3f3;
+}
+
+body {
+    background-color: var(--color-bg);
+    /* Rich Burgundy Gradient Fallback */
+    background-image:
+        radial-gradient(circle at 50% 0%, rgba(128, 0, 32, 0.4) 0%, transparent 70%),
+        linear-gradient(to bottom, #2a0808 0%, #1a0505 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: var(--color-text);
+    font-family: 'Lato', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Cinzel', serif;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+    background: rgba(40, 10, 10, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(220, 180, 180, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-burgundy);
+    border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-gold);
+    color: #000;
+}
+
+/* Text Reveal Animation Utility */
+.reveal-text-mask {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.reveal-text-content {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.is-visible .reveal-text-content {
+    transform: translateY(0);
+}
+
+/* Infinite Marquee */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Horizontal Scroll (Runway) */
+.runway-wrapper {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.runway-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+/* Kinetic Type Utilities */
+.kinetic-text {
+    background: linear-gradient(45deg, var(--color-gold), #fff, var(--color-gold));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* 3D Utilities */
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+
+.translate-z-20 {
+    transform: translateZ(30px);
+}
+
+.translate-z-40 {
+    transform: translateZ(60px);
+}
+
+/* Custom Cursor */
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--color-gold);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+    mix-blend-mode: difference;
+}
+
+.cursor-follower.active {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(230, 194, 191, 0.2);
+    border-color: transparent;
+}

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis AI | Advanced Healthcare Diagnostics</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 bg-white/80 backdrop-blur-md border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2 text-blue-600">
+                <span class="material-symbols-outlined text-3xl">monitor_heart</span>
+                <span class="font-bold text-xl tracking-tight text-slate-800">Vitalis<span
+                        class="text-blue-600">AI</span></span>
+            </div>
+
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-500">
+                <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
+                <a href="#how-it-works" class="hover:text-blue-600 transition-colors">How it Works</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition-colors">Testimonials</a>
+            </div>
+
+            <button
+                class="px-5 py-2.5 bg-blue-600 text-white rounded-full text-sm font-semibold shadow-lg shadow-blue-600/20 hover:bg-blue-700 hover:shadow-blue-600/30 transition-all transform hover:-translate-y-0.5">
+                Patient Login
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 overflow-hidden">
+        <!-- Abstract Background Blobs -->
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 z-0">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-100/50 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 z-0">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-8">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-blue-600 text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                    FDA APPROVED ALGORITHM
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-bold leading-[1.1] text-slate-900 tracking-tight">
+                    Healthcare Precision, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Powered by
+                        AI.</span>
+                </h1>
+
+                <p class="text-slate-600 text-lg leading-relaxed max-w-lg">
+                    Instant symptom analysis, predictive diagnostics, and personalized treatment plans using advanced
+                    machine learning models trained on 50M+ medical records.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button
+                        class="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold shadow-xl shadow-blue-600/20 hover:bg-blue-700 hover:shadow-blue-600/30 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                        Start Diagnosis
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                    <button
+                        class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 hover:border-slate-300 transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-blue-600">play_circle</span>
+                        Live Demo
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-4 text-sm text-slate-500 pt-4">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white"></div>
+                        <div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white"></div>
+                        <div class="w-8 h-8 rounded-full bg-slate-400 border-2 border-white"></div>
+                    </div>
+                    <p>Trusted by <span class="font-bold text-slate-900">10,000+</span> doctors worldwide</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <!-- CSS Fallback for 3D Element/App UI -->
+                <!-- Main Glass Card -->
+                <div
+                    class="relative w-full max-w-md mx-auto aspect-[3/4] bg-white/60 backdrop-blur-xl rounded-3xl border border-white/50 shadow-[0_20px_60px_rgba(59,130,246,0.15)] p-6 overflow-hidden animate-float">
+
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-8">
+                        <div>
+                            <h3 class="font-bold text-slate-800">Health Overview</h3>
+                            <p class="text-xs text-slate-500">Today, 24 Oct</p>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-500 text-white flex items-center justify-center font-bold">
+                            JD</div>
+                    </div>
+
+                    <!-- Heart Rate Viz (CSS Animation) -->
+                    <div class="mb-8 p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                        <div class="flex justify-between items-end mb-4">
+                            <div>
+                                <p class="text-xs text-slate-400 font-semibold uppercase">Heart Rate</p>
+                                <p class="text-3xl font-bold text-slate-800">72 <span
+                                        class="text-sm font-normal text-slate-500">BPM</span></p>
+                            </div>
+                            <span class="material-symbols-outlined text-red-500 animate-pulse">favorite</span>
+                        </div>
+                        <!-- SVG Waveform -->
+                        <svg class="w-full h-12 stroke-red-500 fill-none stroke-2" viewBox="0 0 100 20"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M0 10 Q 5 10, 10 10 T 15 10 T 20 10 T 25 5 T 30 15 T 35 10 T 40 10 T 45 10 T 50 10 T 55 5 T 60 15 T 65 10 T 70 10 T 75 10 T 80 10 T 85 10 T 90 10 T 95 10 T 100 10"
+                                class="path-animate"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                            <span class="material-symbols-outlined text-blue-600 mb-2">water_drop</span>
+                            <p class="text-sm font-semibold text-slate-700">Blood Oxygen</p>
+                            <p class="text-xl font-bold text-slate-900">98%</p>
+                        </div>
+                        <div class="p-4 bg-orange-50 rounded-2xl border border-orange-100">
+                            <span class="material-symbols-outlined text-orange-600 mb-2">bedtime</span>
+                            <p class="text-sm font-semibold text-slate-700">Sleep</p>
+                            <p class="text-xl font-bold text-slate-900">7h 42m</p>
+                        </div>
+                    </div>
+
+                    <!-- Scan Button -->
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div
+                            class="w-full py-4 bg-slate-900 text-white rounded-xl text-center font-semibold text-sm cursor-pointer hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined">qr_code_scanner</span>
+                            Sync Device
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div
+                    class="absolute top-[20%] -left-8 p-3 bg-white rounded-xl shadow-lg border border-slate-100 animate-float-delayed flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                        <span class="material-symbols-outlined text-sm">check</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-800">Results Normal</p>
+                        <p class="text-[10px] text-slate-500">Just now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="features" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-2 block">Our
+                    Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Comprehensive AI Healthcare</h2>
+                <p class="text-slate-600">Advanced diagnostics and personalized care plans powered by state-of-the-art
+                    artificial intelligence.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="service-card opacity-0 translate-y-8 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-3xl">medical_services</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI Diagnostics</h3>
+                    <p class="text-slate-600 mb-6">Real-time symptom analysis using FDA-approved algorithms with 99.8%
+                        accuracy.</p>
+                    <a href="#"
+                        class="text-blue-600 font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="service-card opacity-0 translate-y-8 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-3xl">vital_signs</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Smart Monitoring</h3>
+                    <p class="text-slate-600 mb-6">24/7 wearable integration to track vitals and alert doctors of
+                        anomalies instantly.</p>
+                    <a href="#"
+                        class="text-indigo-600 font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="service-card opacity-0 translate-y-8 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-3xl">videocam</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Telemedicine</h3>
+                    <p class="text-slate-600 mb-6">Instant video consultations with top specialists matched to your
+                        specific needs.</p>
+                    <a href="#"
+                        class="text-teal-600 font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-indigo-600 font-semibold text-sm tracking-wider uppercase mb-2 block">Process</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">How Vitalis Works</h2>
+                <p class="text-slate-600">Seamless integration of technology and care in three simple steps.</p>
+            </div>
+
+            <div class="relative grid md:grid-cols-3 gap-12">
+                <!-- Connecting Line (Desktop) -->
+                <div
+                    class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-blue-200 via-indigo-200 to-teal-200 -z-0">
+                </div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 text-center">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white rounded-full shadow-lg border-4 border-blue-50 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-blue-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Input Symptoms</h3>
+                    <p class="text-slate-600">Describe how you feel or connect your wearable device for auto-analysis.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10 text-center">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white rounded-full shadow-lg border-4 border-indigo-50 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-indigo-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">AI Analysis</h3>
+                    <p class="text-slate-600">Our engine compares your data against millions of medical records
+                        instantly.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10 text-center">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white rounded-full shadow-lg border-4 border-teal-50 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-teal-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Get Treatment</h3>
+                    <p class="text-slate-600">Receive a diagnosis and prescription or connect with a specialist
+                        immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-xl">
+                    <span class="text-teal-600 font-semibold text-sm tracking-wider uppercase mb-2 block">Our
+                        Team</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">World-Class Specialists</h2>
+                    <p class="text-slate-600">Led by pioneers in medicine and technology.</p>
+                </div>
+                <button
+                    class="hidden md:flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
+                    View all doctors <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Doctor 1 -->
+                <div class="group relative overflow-hidden rounded-3xl">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400"
+                        alt="Dr. Sarah Jen"
+                        class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white font-bold text-lg">Dr. Sarah Jen</h3>
+                        <p class="text-slate-300 text-sm">Chief Neurologist</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="group relative overflow-hidden rounded-3xl">
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400"
+                        alt="Dr. Mike Chen"
+                        class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white font-bold text-lg">Dr. Mike Chen</h3>
+                        <p class="text-slate-300 text-sm">Cardiology Head</p>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="group relative overflow-hidden rounded-3xl">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400"
+                        alt="Dr. Emily Rose"
+                        class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white font-bold text-lg">Dr. Emily Rose</h3>
+                        <p class="text-slate-300 text-sm">Pediatrics</p>
+                    </div>
+                </div>
+                <!-- Doctor 4 -->
+                <div class="group relative overflow-hidden rounded-3xl">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400"
+                        alt="Dr. James Wilson"
+                        class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white font-bold text-lg">Dr. James Wilson</h3>
+                        <p class="text-slate-300 text-sm">AI Research Lead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & FAQ Grid -->
+    <section id="testimonials" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+            <!-- Testimonials -->
+            <div>
+                <span
+                    class="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-2 block">Testimonials</span>
+                <h2 class="text-3xl font-bold text-slate-900 mb-8">Stories of Recovery</h2>
+
+                <div class="space-y-6">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">"Vitalis detected an arrhythmia that my previous
+                            checkups missed. The immediate connection to a cardiologist likely saved my life."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User"
+                                class="w-12 h-12 rounded-full">
+                            <div>
+                                <h4 class="font-bold text-slate-900">Sarah Johnson</h4>
+                                <p class="text-xs text-slate-500">Recovered Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">"The most convenient healthcare experience I've
+                            ever had. From diagnosis to prescription in under 20 minutes."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User"
+                                class="w-12 h-12 rounded-full">
+                            <div>
+                                <h4 class="font-bold text-slate-900">Michael Chen</h4>
+                                <p class="text-xs text-slate-500">Business Executive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div>
+                <span class="text-indigo-600 font-semibold text-sm tracking-wider uppercase mb-2 block">FAQ</span>
+                <h2 class="text-3xl font-bold text-slate-900 mb-8">Common Questions</h2>
+
+                <div class="space-y-4">
+                    <div
+                        class="group bg-white rounded-2xl border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+                        <button class="w-full flex justify-between items-center p-6 text-left">
+                            <span class="font-semibold text-slate-900">How accurate is the AI diagnosis?</span>
+                            <span
+                                class="material-symbols-outlined text-slate-400 transition-transform duration-300 arrow">expand_more</span>
+                        </button>
+                        <div class="px-6 pb-6 text-slate-600 hidden">
+                            Our AI models typically achieve 99.8% accuracy, validated against millions of cases.
+                            However, all AI diagnoses are reviewed by a human specialist before final confirmation.
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white rounded-2xl border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+                        <button class="w-full flex justify-between items-center p-6 text-left">
+                            <span class="font-semibold text-slate-900">Is my data secure?</span>
+                            <span
+                                class="material-symbols-outlined text-slate-400 transition-transform duration-300 arrow">expand_more</span>
+                        </button>
+                        <div class="px-6 pb-6 text-slate-600 hidden">
+                            Yes, we use bank-grade encryption (AES-256) and are fully HIPAA compliant. Your medical data
+                            is never shared with third parties without explicit consent.
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white rounded-2xl border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+                        <button class="w-full flex justify-between items-center p-6 text-left">
+                            <span class="font-semibold text-slate-900">Does insurance cover Vitalis?</span>
+                            <span
+                                class="material-symbols-outlined text-slate-400 transition-transform duration-300 arrow">expand_more</span>
+                        </button>
+                        <div class="px-6 pb-6 text-slate-600 hidden">
+                            We partner with most major insurance providers. You can check your specific coverage
+                            eligibility directly within the app during signup.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 text-blue-500 mb-6">
+                    <span class="material-symbols-outlined text-3xl">monitor_heart</span>
+                    <span class="font-bold text-xl tracking-tight text-white">Vitalis<span
+                            class="text-blue-500">AI</span></span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Revolutionizing healthcare access through the power of artificial intelligence and human compassion.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                        <i class="opacity-50 text-xs">TW</i> <!-- Placeholder icon -->
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                        <i class="opacity-50 text-xs">LI</i> <!-- Placeholder icon -->
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                        <i class="opacity-50 text-xs">IG</i> <!-- Placeholder icon -->
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6">Product</h4>
+                <ul class="space-y-3 text-slate-400 text-sm">
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Features</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Pricing</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">For Doctors</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6">Company</h4>
+                <ul class="space-y-3 text-slate-400 text-sm">
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6">Subscribe</h4>
+                <p class="text-slate-400 text-sm mb-4">Get the latest health updates and features.</p>
+                <form class="flex gap-2">
+                    <input type="email" placeholder="Email address"
+                        class="w-full px-4 py-2 rounded-lg bg-slate-800 border-none text-white focus:ring-2 focus:ring-blue-600 text-sm">
+                    <button class="px-4 py-2 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Go
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+            &copy; 2024 Vitalis AI Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Appointment Widget (Floating Bottom Right) -->
+    <div class="fixed bottom-8 right-8 z-40">
+        <button
+            class="w-14 h-14 bg-blue-600 rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 transition-transform hover:rotate-90">
+            <span class="material-symbols-outlined text-2xl">add</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

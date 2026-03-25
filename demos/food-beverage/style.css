@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --color-gold: #D4AF37;
+    --color-dark: #0f0f0f;
+}
+
+body {
+    background-color: var(--color-dark);
+    font-family: 'Lato', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+.border-gold {
+    border-color: var(--color-gold);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-gold);
+    color: #000;
+}
+
+/* 3D Hero Utilities */
+.hero-perspective {
+    perspective: 1000px;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+}
+
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+
+.hero-layer {
+    will-change: transform;
+}
+
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+
+.hero-dish {
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
+    transition: filter 0.3s ease;
+    border-radius: 50%;
+    object-fit: contain;
+    /* mix-blend-mode removed to keep rich black slate */
+}
+
+.hero-dish-container {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
