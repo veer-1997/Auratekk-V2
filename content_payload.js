@@ -9,7 +9,7 @@ const serviceDetails = {
             "Progressive Web Apps (PWA)",
             "Micro-frontend Architecture"
         ],
-        "image": "service_web_dev_futuristic_1770688377502.png",
+        "image": "hero_web_dev_futuristic_1770688377502.png",
         "title": "Frontend Excellence"
     },
     "backend-powerhouses": {
@@ -61,7 +61,7 @@ const serviceDetails = {
             "In-Memory Caching",
             "Data Warehousing"
         ],
-        "image": "service_data_1770395144717.png",
+        "image": "hero_software_dev_matrix_1770688395055.png",
         "title": "Database Technologies"
     },
     "emerging-tech": {
@@ -100,7 +100,7 @@ const serviceDetails = {
             "IoT Health Monitoring",
             "Data Privacy (HIPAA)"
         ],
-        "image": "service_startup_1770395129627.png",
+        "image": "hero_future_city_general_1770688485783.png",
         "title": "Healthcare & MedTech"
     },
     "real-estate": {
@@ -243,7 +243,7 @@ const serviceDetails = {
             "Rich User Experience",
             "Easy Scale-up"
         ],
-        "image": "service_web_dev_futuristic_1770688377502.png",
+        "image": "hero_web_dev_futuristic_1770688377502.png",
         "title": "Single Page Applications (SPA)"
     },
     "progressive-web-apps-pwa": {
