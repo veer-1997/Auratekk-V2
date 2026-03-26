@@ -634,13 +634,12 @@ async function submitToHubSpot(formElement, submitButton, fields) {
 
         if (response.ok) {
             // Success
-            alert('✅ Transmission Successful! Our team has received your uplink request. We will contact you shortly.');
+            openSuccessModal();
             formElement.reset();
 
-            // If this was a modal, optinally close it after a delay?
-            // Checking if it's the expert form to close modal
+            // If this was a modal, close it
             if (formElement.id === 'expertContactForm' && typeof closeContactModal === 'function') {
-                closeContactModal();
+                setTimeout(closeContactModal, 500);
             }
 
         } else {
@@ -795,4 +794,24 @@ const industryObserver = new MutationObserver(() => {
         initIndustryCardGlow();
     }
 });
-industryObserver.observe(document.body, { childList: true, subtree: true });
+// --- Success Modal Logic ---
+function openSuccessModal() {
+    const modal = document.getElementById('success-modal');
+    if (!modal) return;
+    modal.classList.remove('pointer-events-none', 'opacity-0');
+    modal.querySelector('.relative').classList.remove('scale-95');
+    modal.querySelector('.relative').classList.add('scale-100');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeSuccessModal() {
+    const modal = document.getElementById('success-modal');
+    if (!modal) return;
+    modal.classList.add('pointer-events-none', 'opacity-0');
+    modal.querySelector('.relative').classList.add('scale-95');
+    modal.querySelector('.relative').classList.remove('scale-100');
+    document.body.style.overflow = '';
+}
+
+window.closeSuccessModal = closeSuccessModal;
+window.openSuccessModal = openSuccessModal;

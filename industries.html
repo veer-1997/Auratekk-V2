@@ -30,21 +30,53 @@
             }
         })();
     </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" href="_next/static/chunks/06-fl3z_1s4sc.css">
+    <script src="content_payload.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SEO & AEO Tier 1 -->
+    <meta name="description" content="Digital transformation solutions for FinTech, Healthcare, Real Estate, and more. Explore the industries we serve with tailored IT excellence in Dubai.">
+    <link rel="canonical" href="https://auratekk.com/industries.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auratekk.com/industries.html">
+    <meta property="og:title" content="Industries We Serve - Aura Tech">
+    <meta property="og:description" content="Digital transformation solutions for FinTech, Healthcare, Real Estate, and more. Explore the industries we serve with tailored IT excellence in Dubai.">
+    <meta property="og:image" content="https://auratekk.com/AURATEKK_DARK.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://auratekk.com/industries.html">
+    <meta property="twitter:title" content="Industries We Serve - Aura Tech">
+    <meta property="twitter:description" content="Digital transformation solutions for FinTech, Healthcare, Real Estate, and more. Explore the industries we serve with tailored IT excellence in Dubai.">
+    <meta property="twitter:image" content="https://auratekk.com/AURATEKK_DARK.svg">
+    
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Auratekk",
+    "alternateName": "Aura Tech",
+    "url": "https://auratekk.com/",
+    "logo": "https://auratekk.com/AURATEKK_DARK.svg",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "AE",
+        "availableLanguage": "en"
+    }
+}
+    </script>
 </head>
 
 <body
     class="bg-slate-50/50 dark:bg-background-dark font-body text-slate-600 dark:text-slate-300 antialiased selection:bg-accent-gold selection:text-black overflow-x-hidden">
 
     <!-- Loading Screen -->
-    <div id="preloader" class="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center transition-opacity duration-600">
-        <div class="relative w-64 h-[2px] bg-white/10 rounded-full overflow-hidden mb-4">
-            <div id="preloader-bar" class="absolute top-0 left-0 h-full bg-accent-gold w-full origin-left"></div>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-            <h1 class="font-display font-bold text-2xl text-white tracking-[0.2em] uppercase">Aura Tekk</h1>
-            <p class="font-mono text-[10px] text-accent-gold tracking-[0.5em] uppercase opacity-50">Engineering Excellence</p>
-        </div>
-    </div>
+    <div id="preloader" style="position: fixed; inset: 0; z-index: 9999; background: rgb(2, 2, 8); display: flex; align-items: center; justify-content: center; flex-direction: column; transition: opacity 0.6s ease;"><div style="margin-bottom: 32px;"><img src="AURATEKK_DARK.svg" alt="Auratekk" style="height: 48px; width: auto;"></div><div style="width: 180px; height: 2px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden;"><div id="preloader-bar" style="height: 100%; width: 100%; background: linear-gradient(90deg, #a855f7, #c084fc, #a855f7); background-size: 200% 100%; transform-origin: left;"></div></div><p style="margin-top: 20px; font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: rgba(255,255,255,0.3); text-transform: uppercase;">System Online v2.0</p></div>
     <!-- Light Mode Background (Frosted Glass & Trading Colors) -->
     <div
         class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none dark:hidden transition-opacity duration-1000 bg-gradient-to-br from-blue-50/80 via-white/80 to-indigo-50/80">
@@ -68,46 +100,33 @@
         <header id="main-header"
             class="fixed top-0 z-50 w-full border-b border-white/5 bg-white/1 dark:bg-black/1 backdrop-blur-2xl transition-all duration-300 group/header hover:bg-white/5 dark:hover:bg-black/5 [&.scrolled]:bg-white/90 [&.scrolled]:shadow-lg dark:[&.scrolled]:bg-black/90">
             <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-                <!-- Logo -->
                 <div class="flex items-center">
-                    <a href="./index.html" class="logo-placeholder">
-                        <!-- Dark Mode Logo (White Text) - Visible in Dark Mode OR Light Mode (Top) -->
-                        <img alt="auratekk_dark"
-                            class="block h-10 w-auto object-contain transition-transform duration-300 hover:scale-105 group-[.scrolled]/header:hidden dark:group-[.scrolled]/header:block"
-                            src="./AURATEKK_DARK.svg" />
-                        <!-- Light Mode Logo (Dark Text) - Visible ONLY in Light Mode (Scrolled) -->
+                    <a href="index.html" class="logo-placeholder">
                         <img alt="auratekk_light"
-                            class="hidden h-10 w-auto object-contain transition-transform duration-300 hover:scale-105 group-[.scrolled]/header:block dark:group-[.scrolled]/header:hidden"
-                            src="./AURATEKK_LIGHT.svg" />
+                            class="block dark:hidden h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                            src="AURATEKK_LIGHT.svg" />
+                        <img alt="auratekk_dark"
+                            class="hidden dark:block h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                            src="AURATEKK_DARK.svg" />
                     </a>
                 </div>
-
-                <!-- Desktop Nav -->
                 <nav class="hidden lg:flex items-center gap-8 h-full">
-                    <!-- Home -->
-                    <a class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white hover:text-accent-gold transition-colors relative"
-                        href="./index.html">Home</a>
-
-                    <!-- Services Mega Menu -->
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors relative"
+                        href="index.html">Home</a>
                     <div class="group h-full flex items-center">
                         <button
-                            class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white group-hover:text-accent-gold transition-colors flex items-center gap-1">
+                            class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white group-hover:text-accent-gold transition-colors flex items-center gap-1">
                             Services
                             <span
                                 class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:rotate-180">keyboard_arrow_down</span>
                         </button>
-                        <!-- Mega Menu Panel -->
                         <div
-                            class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border-t border-white/10 shadow-glass-lg bg-white/40 dark:bg-black/40 backdrop-blur-3xl">
-                            <!-- Gradient Glow Effect -->
+                            class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border-t border-black/10 dark:border-white/10 shadow-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl max-h-[80vh] overflow-y-auto">
                             <div
                                 class="absolute inset-0 bg-gradient-to-br from-accent-gold/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                             </div>
-
                             <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12 grid grid-cols-4 gap-8">
-                                <!-- Col 1: Web Dev, Branding -->
                                 <div class="space-y-8">
-                                    <!-- Web Development -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -136,7 +155,6 @@
                                                         CMS Development</span></a></li>
                                         </ul>
                                     </div>
-                                    <!-- Branding Design -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -176,10 +194,7 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Col 2: Cloud, Digital Marketing -->
                                 <div class="space-y-8">
-                                    <!-- Cloud Services -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -208,7 +223,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- Digital Marketing -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -248,10 +262,7 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Col 3: Software, Mobile -->
                                 <div class="space-y-8">
-                                    <!-- Software Development -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -275,7 +286,6 @@
                                                         Development</span></a></li>
                                         </ul>
                                     </div>
-                                    <!-- Mobile App Development -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -320,10 +330,7 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Col 4: Emerging Tech, Technologies -->
                                 <div class="space-y-8">
-                                    <!-- Emerging Technologies -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -347,14 +354,12 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- Technologies (Icons) -->
                                     <div>
                                         <h3
                                             class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
                                             Technologies
                                         </h3>
                                         <div class="grid grid-cols-4 gap-4 pt-2">
-                                            <!-- Placeholder Icons: Using generic text or material symbols for now as no specific assets provided for all -->
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
                                                 title="Mailchimp">MC</div>
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
@@ -363,7 +368,6 @@
                                                 title="PostgreSQL">PG</div>
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
                                                 title="MySQL">SQL</div>
-
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
                                                 title="Laravel">Lar</div>
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
@@ -372,7 +376,6 @@
                                                 title="Kotlin">Kot</div>
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
                                                 title="Java">Java</div>
-
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
                                                 title="Swift">Swi</div>
                                             <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
@@ -387,25 +390,19 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- IT Services Mega Menu -->
                     <div class="group h-full flex items-center">
                         <button
-                            class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white group-hover:text-accent-gold transition-colors flex items-center gap-1">
+                            class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white group-hover:text-accent-gold transition-colors flex items-center gap-1">
                             IT Services
                             <span
                                 class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:rotate-180">keyboard_arrow_down</span>
                         </button>
-                        <!-- Mega Menu Panel -->
                         <div
-                            class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border-t border-white/10 shadow-glass-lg bg-white/40 dark:bg-black/40 backdrop-blur-3xl">
-                            <!-- Gradient Glow Effect -->
+                            class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border-t border-black/10 dark:border-white/10 shadow-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl max-h-[80vh] overflow-y-auto">
                             <div
                                 class="absolute inset-0 bg-gradient-to-br from-accent-gold/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                             </div>
-
                             <div class="relative z-10 max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8">
-                                <!-- Infrastructure -->
                                 <div>
                                     <h3
                                         class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -422,7 +419,6 @@
                                                 & Network Mgmt</a></li>
                                     </ul>
                                 </div>
-                                <!-- Cloud & Hosting -->
                                 <div>
                                     <h3
                                         class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -439,7 +435,6 @@
                                                 & Disaster Recovery</a></li>
                                     </ul>
                                 </div>
-                                <!-- Managed IT -->
                                 <div>
                                     <h3
                                         class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -456,7 +451,6 @@
                                                 Management</a></li>
                                     </ul>
                                 </div>
-                                <!-- Security -->
                                 <div>
                                     <h3
                                         class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
@@ -476,33 +470,27 @@
                             </div>
                         </div>
                     </div>
-
-                    <a class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white hover:text-accent-gold transition-colors"
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
                         href="technologies.html">Technologies</a>
-                    <a class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white hover:text-accent-gold transition-colors"
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
                         href="industries.html">Industries</a>
-                    <a class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white hover:text-accent-gold transition-colors"
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
                         href="about-us.html">About Us</a>
-                    <a class="nav-link font-display text-sm font-bold text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white hover:text-accent-gold transition-colors"
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
                         href="careers.html">Careers</a>
                 </nav>
-
-                <!-- Right Side Actions -->
                 <div class="flex items-center gap-6">
                     <a href="javascript:void(0)" onclick="openContactModal()"
                         class="hidden lg:flex items-center gap-2 group">
                         <span
-                            class="font-mono text-xs font-bold uppercase tracking-widest text-white group-[.scrolled]/header:text-slate-900 dark:group-[.scrolled]/header:text-white group-hover:text-accent-gold transition-colors">Contact
+                            class="font-mono text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white group-hover:text-accent-gold transition-colors">Contact
                             Us</span>
                         <span
-                            class="size-8 rounded-full border border-white/10 group-[.scrolled]/header:border-black/10 dark:border-white/10 dark:group-[.scrolled]/header:border-white/10 flex items-center justify-center group-hover:bg-accent-gold group-hover:border-accent-gold group-hover:text-black transition-all">
+                            class="size-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-accent-gold group-hover:border-accent-gold group-hover:text-black transition-all">
                             <span
-                                class="material-symbols-outlined text-sm text-white group-[.scrolled]/header:text-slate-900 dark:text-white group-hover:text-black">arrow_outward</span>
+                                class="material-symbols-outlined text-sm text-slate-900 dark:text-white group-hover:text-black">arrow_outward</span>
                         </span>
                     </a>
-
-                    
-                    <!-- Mobile Menu Button -->
                     <button id="mobile-menu-btn" aria-label="Open Mobile Menu"
                         class="lg:hidden flex items-center justify-center rounded-full bg-black/5 dark:bg-white/5 p-2 text-slate-900 dark:text-white hover:bg-accent-gold hover:text-black transition-all border border-black/10 dark:border-white/10">
                         <span class="material-symbols-outlined text-xl">menu</span>
@@ -515,11 +503,11 @@
         <div id="mobile-menu"
             class="fixed inset-0 z-[60] bg-background-light dark:bg-background-dark transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col">
             <div class="flex items-center justify-between p-6 border-b border-black/5 dark:border-white/5">
-                <a href="./index.html" class="logo-placeholder">
+                <a href="index.html" class="logo-placeholder">
                     <img alt="auratekk_dark" class="hidden dark:block h-8 w-auto object-contain"
-                        src="./AURATEKK_DARK.svg" />
+                        src="AURATEKK_DARK.svg" />
                     <img alt="auratekk_light" class="block dark:hidden h-8 w-auto object-contain"
-                        src="./AURATEKK_LIGHT.svg" />
+                        src="AURATEKK_LIGHT.svg" />
                 </a>
                 <button id="mobile-menu-close" aria-label="Close Mobile Menu"
                     class="p-2 rounded-full border border-black/10 dark:border-white/10 text-slate-900 dark:text-white">
@@ -527,61 +515,225 @@
                 </button>
             </div>
             <div class="flex-1 overflow-y-auto p-6 space-y-6">
-                <a href="./index.html"
+                <a href="index.html"
                     class="block font-display text-2xl font-bold text-slate-900 dark:text-white">Home</a>
-
-                <!-- Mobile Accordion: Services -->
                 <div class="border-b border-black/5 dark:border-white/5 pb-4">
                     <button
-                        class="flex items-center justify-between w-full font-display text-2xl font-bold text-slate-900 dark:text-white mb-4 mobile-accordion-trigger">
+                        class="flex items-center justify-between w-full font-display text-xl font-bold text-slate-900 dark:text-white mb-4 mobile-accordion-trigger">
                         Services
                         <span class="material-symbols-outlined transition-transform">expand_more</span>
                     </button>
-                    <div class="hidden space-y-4 pl-4 mobile-accordion-content">
-                        <a href="services/web-development.html" class="block text-slate-600 dark:text-slate-400">Web
-                            Development</a>
-                        <a href="services/custom-software-development.html"
-                            class="block text-slate-600 dark:text-slate-400">Software Development</a>
-                        <a href="services/ios-app-development.html"
-                            class="block text-slate-600 dark:text-slate-400">Mobile Apps</a>
-                        <a href="services/cloud-consulting.html" class="block text-slate-600 dark:text-slate-400">Cloud
-                            Services</a>
-                        <a href="services/branding-design.html"
-                            class="block text-slate-600 dark:text-slate-400">Branding & Design</a>
-                        <a href="services/digital-marketing.html"
-                            class="block text-slate-600 dark:text-slate-400">Digital Marketing</a>
-                        <a href="services/emerging-tech.html" class="block text-slate-600 dark:text-slate-400">Emerging
-                            Tech</a>
+                    <div class="hidden space-y-3 pl-4 mobile-accordion-content">
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Web Development
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/web-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Web
+                                    Development</a>
+                                <a href="services/wordpress-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">WordPress
+                                    Development</a>
+                                <a href="services/ecommerce-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">E-Commerce
+                                    Development</a>
+                                <a href="services/custom-cms-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Custom CMS
+                                    Development</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Branding Design
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/ui-ux-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">UI/UX
+                                    Design</a>
+                                <a href="services/logo-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Logo
+                                    Design</a>
+                                <a href="services/brochure-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Brochure
+                                    Design</a>
+                                <a href="services/website-design-dubai.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Website
+                                    Design Dubai</a>
+                                <a href="services/branding-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Branding</a>
+                                <a href="services/social-media-creatives.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Social Media
+                                    Creatives</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Cloud Services
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/cloud-consulting.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Cloud
+                                    Consulting</a>
+                                <a href="services/azure-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Azure</a>
+                                <a href="services/aws-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">AWS</a>
+                                <a href="services/gcp-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">GCP</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Digital
+                                Marketing</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/digital-marketing.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Digital
+                                    Marketing</a>
+                                <a href="services/seo-optimization.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">SEO</a>
+                                <a href="services/geo-optimization.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">GEO</a>
+                                <a href="services/ppc-management.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">PPC</a>
+                                <a href="services/video-animation.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Video
+                                    Animation</a>
+                                <a href="services/conversion-rate-optimization.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Conversion
+                                    Rate Optimization</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Software
+                                Development</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/custom-software-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Software
+                                    Development</a>
+                                <a href="services/devops-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">DevOps</a>
+                                <a href="services/mvp-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">MVP
+                                    Development</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Mobile App
+                                Development</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/ios-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Mobile App
+                                    Development</a>
+                                <a href="services/ios-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">iOS App
+                                    Development</a>
+                                <a href="services/wearable-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Wearable App
+                                    Development</a>
+                                <a href="services/kotlin-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Kotlin App
+                                    Development</a>
+                                <a href="services/golang-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">GoLang App
+                                    Development</a>
+                                <a href="services/react-native-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">React Native
+                                    Development</a>
+                                <a href="services/flutter-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Flutter App
+                                    Development</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Emerging
+                                Technologies</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/generative-ai.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Generative
+                                    AI</a>
+                                <a href="services/ar-vr-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">AR/VR
+                                    Development</a>
+                                <a href="services/iot-solutions.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">IOT</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Mobile Accordion: IT Services -->
                 <div class="border-b border-black/5 dark:border-white/5 pb-4">
                     <button
-                        class="flex items-center justify-between w-full font-display text-2xl font-bold text-slate-900 dark:text-white mb-4 mobile-accordion-trigger">
+                        class="flex items-center justify-between w-full font-display text-xl font-bold text-slate-900 dark:text-white mb-4 mobile-accordion-trigger">
                         IT Services
                         <span class="material-symbols-outlined transition-transform">expand_more</span>
                     </button>
-                    <div class="hidden space-y-4 pl-4 mobile-accordion-content">
-                        <a href="services/it-infrastructure-setup.html"
-                            class="block text-slate-600 dark:text-slate-400">Infrastructure</a>
-                        <a href="services/hosting-management.html"
-                            class="block text-slate-600 dark:text-slate-400">Cloud & Hosting</a>
-                        <a href="services/it-support-maintenance.html"
-                            class="block text-slate-600 dark:text-slate-400">Managed IT</a>
-                        <a href="services/security-assessments.html"
-                            class="block text-slate-600 dark:text-slate-400">Cybersecurity</a>
+                    <div class="hidden space-y-3 pl-4 mobile-accordion-content">
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Infrastructure
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/it-infrastructure-setup.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">IT
+                                    Infrastructure Setup</a>
+                                <a href="services/on-prem-cloud-setup.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">On-Prem &
+                                    Cloud Setup</a>
+                                <a href="services/server-network-mgmt.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Server &
+                                    Network Mgmt</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Cloud & Hosting
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/hosting-management.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Hosting
+                                    Management</a>
+                                <a href="services/cloud-migration.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Cloud
+                                    Migration</a>
+                                <a href="services/backup-disaster-recovery.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Backup &
+                                    Disaster Recovery</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Managed IT</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/it-support-maintenance.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">IT Support &
+                                    Maintenance</a>
+                                <a href="services/remote-monitoring.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Remote
+                                    Monitoring</a>
+                                <a href="services/patch-management.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Patch
+                                    Management</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Cybersecurity
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="services/security-assessments.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Security
+                                    Assessments</a>
+                                <a href="services/firewall-endpoint-protection.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Firewall &
+                                    Endpoint Protection</a>
+                                <a href="services/identity-access-mgmt.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Identity
+                                    Access Mgmt</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
                 <a href="technologies.html"
-                    class="block font-display text-2xl font-bold text-slate-900 dark:text-white">Technologies</a>
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">Technologies</a>
                 <a href="industries.html"
-                    class="block font-display text-2xl font-bold text-slate-900 dark:text-white">Industries</a>
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">Industries</a>
                 <a href="about-us.html"
-                    class="block font-display text-2xl font-bold text-slate-900 dark:text-white">About Us</a>
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">About Us</a>
                 <a href="careers.html"
-                    class="block font-display text-2xl font-bold text-slate-900 dark:text-white">Careers</a>
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">Careers</a>
             </div>
             <div class="p-6 border-t border-black/5 dark:border-white/5">
                 <a href="javascript:void(0)" onclick="openContactModal()"
@@ -985,6 +1137,22 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+<div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 backdrop-blur-sm">
+        <div class="absolute inset-0 bg-black/60 dark:bg-black/80" onclick="closeSuccessModal()"></div>
+        <div class="relative w-full max-w-md mx-4 p-8 rounded-2xl border border-white/10 bg-white/10 dark:bg-black/40 backdrop-blur-2xl shadow-2xl transform scale-95 transition-all duration-500">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-accent-gold/20 flex items-center justify-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-accent-gold">check_circle</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-2">Transmission Successful</h3>
+                <p class="text-slate-300 mb-8">Your message has been received. Our agents are analyzing your requirements.</p>
+                <button onclick="closeSuccessModal()" 
+                    class="w-full py-4 bg-accent-gold text-black font-bold uppercase tracking-widest rounded-full hover:shadow-[0_0_20px_rgba(255,215,0,0.4)] transition-all">
+                    Return to site
+                </button>
             </div>
         </div>
     </div>

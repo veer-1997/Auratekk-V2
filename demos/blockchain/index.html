@@ -23,41 +23,734 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../content_payload.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" href="../../_next/static/chunks/06-fl3z_1s4sc.css">
+    <script src="../../script.js" defer></script>
+
+    <!-- SEO & AEO Tier 1 -->
+    <meta name="description" content="Auratekk (Aura Tech) is a leading IT services and technology solutions provider in Dubai, UAE. Specialized in Software Development, Cloud, and SEO.">
+    <link rel="canonical" href="https://auratekk.com/demos/blockchain/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auratekk.com/demos/blockchain/">
+    <meta property="og:title" content="Cipher Chain | The Future of Decentralization">
+    <meta property="og:description" content="Auratekk (Aura Tech) is a leading IT services and technology solutions provider in Dubai, UAE. Specialized in Software Development, Cloud, and SEO.">
+    <meta property="og:image" content="https://auratekk.com/AURATEKK_DARK.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://auratekk.com/demos/blockchain/">
+    <meta property="twitter:title" content="Cipher Chain | The Future of Decentralization">
+    <meta property="twitter:description" content="Auratekk (Aura Tech) is a leading IT services and technology solutions provider in Dubai, UAE. Specialized in Software Development, Cloud, and SEO.">
+    <meta property="twitter:image" content="https://auratekk.com/AURATEKK_DARK.svg">
+    
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Auratekk",
+    "alternateName": "Aura Tech",
+    "url": "https://auratekk.com/",
+    "logo": "https://auratekk.com/AURATEKK_DARK.svg",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "AE",
+        "availableLanguage": "en"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Auratekk IT Solutions Dubai",
+    "image": "https://auratekk.com/AURATEKK_DARK.svg",
+    "@id": "https://auratekk.com/#localbusiness",
+    "url": "https://auratekk.com/",
+    "telephone": "",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Business Bay",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.1852,
+        "longitude": 55.2726
+    }
+}
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://auratekk.com/",
+    "name": "Auratekk",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://auratekk.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}
+    </script>
 </head>
 
 <body class="bg-black text-[#0f0] overflow-x-hidden font-mono selection:bg-[#0f0] selection:text-black">
+<div id="preloader" style="position: fixed; inset: 0; z-index: 9999; background: rgb(2, 2, 8); display: flex; align-items: center; justify-content: center; flex-direction: column; transition: opacity 0.6s ease;"><div style="margin-bottom: 32px;"><img src="../../AURATEKK_DARK.svg" alt="Auratekk" style="height: 48px; width: auto;"></div><div style="width: 180px; height: 2px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden;"><div id="preloader-bar" style="height: 100%; width: 100%; background: linear-gradient(90deg, #a855f7, #c084fc, #a855f7); background-size: 200% 100%; transform-origin: left;"></div></div><p style="margin-top: 20px; font-family: monospace; font-size: 10px; letter-spacing: 0.25em; color: rgba(255,255,255,0.3); text-transform: uppercase;">System Online v2.0</p></div>
 
     <!-- Matrix Background Canvas -->
     <canvas id="matrix-bg" class="fixed top-0 left-0 w-full h-full z-0 opacity-20 pointer-events-none"></canvas>
 
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 px-6 py-4 border-b border-[#0f0]/20 bg-black/80 backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-2 group cursor-pointer">
-                <span class="material-symbols-outlined text-[#0f0] group-hover:animate-spin">token</span>
-                <span
-                    class="font-display text-xl tracking-widest uppercase text-white group-hover:text-[#0f0] transition-colors">Cipher<span
-                        class="text-[#0f0]">.Chain</span></span>
+    <header id="main-header"
+            class="fixed top-0 z-50 w-full border-b border-white/5 bg-white/1 dark:bg-black/1 backdrop-blur-2xl transition-all duration-300 group/header hover:bg-white/5 dark:hover:bg-black/5 [&.scrolled]:bg-white/90 [&.scrolled]:shadow-lg dark:[&.scrolled]:bg-black/90">
+            <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
+                <div class="flex items-center">
+                    <a href="../../index.html" class="logo-placeholder">
+                        <img alt="auratekk_light"
+                            class="block dark:hidden h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                            src="../../AURATEKK_LIGHT.svg" />
+                        <img alt="auratekk_dark"
+                            class="hidden dark:block h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                            src="../../AURATEKK_DARK.svg" />
+                    </a>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8 h-full">
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors relative"
+                        href="../../index.html">Home</a>
+                    <div class="group h-full flex items-center">
+                        <button
+                            class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white group-hover:text-accent-gold transition-colors flex items-center gap-1">
+                            Services
+                            <span
+                                class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:rotate-180">keyboard_arrow_down</span>
+                        </button>
+                        <div
+                            class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border-t border-black/10 dark:border-white/10 shadow-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl max-h-[80vh] overflow-y-auto">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-accent-gold/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                            </div>
+                            <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 py-12 grid grid-cols-4 gap-8">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Web Development
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/web-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Web
+                                                        Development</span></a></li>
+                                            <li><a href="../../services/wordpress-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Wordpress
+                                                        Development</span></a></li>
+                                            <li><a href="../../services/ecommerce-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">E-Commerce
+                                                        Web Development</span></a></li>
+                                            <li><a href="../../services/custom-cms-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Custom
+                                                        CMS Development</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Branding Design
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/ui-ux-design.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">UI/UX</span></a>
+                                            </li>
+                                            <li><a href="../../services/logo-design.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Logo
+                                                        Design</span></a></li>
+                                            <li><a href="../../services/brochure-design.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Brochure
+                                                        Design</span></a></li>
+                                            <li><a href="../../services/website-design-dubai.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Website
+                                                        Design Dubai</span></a></li>
+                                            <li><a href="../../services/branding-design.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Branding</span></a>
+                                            </li>
+                                            <li><a href="../../services/social-media-creatives.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Social
+                                                        Media Creatives</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Cloud Services
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/cloud-consulting.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Cloud
+                                                        Consulting</span></a></li>
+                                            <li><a href="../../services/azure-services.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Azure</span></a>
+                                            </li>
+                                            <li><a href="../../services/aws-services.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">AWS</span></a>
+                                            </li>
+                                            <li><a href="../../services/gcp-services.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">GCP</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Digital Marketing
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/digital-marketing.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Digital
+                                                        Marketing</span></a></li>
+                                            <li><a href="../../services/seo-optimization.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">SEO</span></a>
+                                            </li>
+                                            <li><a href="../../services/geo-optimization.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">GEO</span></a>
+                                            </li>
+                                            <li><a href="../../services/ppc-management.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">PPC</span></a>
+                                            </li>
+                                            <li><a href="../../services/video-animation.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Video
+                                                        Animation</span></a></li>
+                                            <li><a href="../../services/conversion-rate-optimization.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Conversion
+                                                        Rate Optimization</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Software Development
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/custom-software-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Software
+                                                        Development</span></a></li>
+                                            <li><a href="../../services/devops-services.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">DevOps</span></a>
+                                            </li>
+                                            <li><a href="../../services/mvp-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">MVP
+                                                        Development</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Mobile App Development
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/ios-app-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Mobile
+                                                        App Development</span></a></li>
+                                            <li><a href="../../services/ios-app-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">iOS
+                                                        App Development</span></a></li>
+                                            <li><a href="../../services/wearable-app-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Wearable
+                                                        App Development</span></a></li>
+                                            <li><a href="../../services/kotlin-app-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Kotlin
+                                                        App Development</span></a></li>
+                                            <li><a href="../../services/golang-app-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">GoLang
+                                                        App Development</span></a></li>
+                                            <li><a href="../../services/react-native-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">React
+                                                        Native App Development</span></a></li>
+                                            <li><a href="../../services/flutter-app-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Flutter
+                                                        App Development</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Emerging Technologies
+                                        </h3>
+                                        <ul class="space-y-2">
+                                            <li><a href="../../services/generative-ai.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">Generative
+                                                        AI</span></a></li>
+                                            <li><a href="../../services/ar-vr-development.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">AR/VR
+                                                        development</span></a></li>
+                                            <li><a href="../../services/iot-solutions.html"
+                                                    class="flex items-center gap-2 group/link"><span
+                                                        class="w-1.5 h-1.5 rounded-full bg-accent-gold/50 group-hover/link:bg-accent-gold transition-colors"></span><span
+                                                        class="text-sm font-bold text-slate-600 dark:text-slate-300 group-hover/link:text-accent-gold transition-colors">IOT</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                            Technologies
+                                        </h3>
+                                        <div class="grid grid-cols-4 gap-4 pt-2">
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Mailchimp">MC</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="AWS">AWS</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="PostgreSQL">PG</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="MySQL">SQL</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Laravel">Lar</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Meta">Meta</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Kotlin">Kot</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Java">Java</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Swift">Swi</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Figma">Fig</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Android">And</div>
+                                            <div class="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-white/5 rounded-lg text-xs font-bold text-slate-500 hover:text-accent-gold transition-colors"
+                                                title="Vue.js">Vue</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group h-full flex items-center">
+                        <button
+                            class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white group-hover:text-accent-gold transition-colors flex items-center gap-1">
+                            IT Services
+                            <span
+                                class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:rotate-180">keyboard_arrow_down</span>
+                        </button>
+                        <div
+                            class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border-t border-black/10 dark:border-white/10 shadow-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl max-h-[80vh] overflow-y-auto">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-accent-gold/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                            </div>
+                            <div class="relative z-10 max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8">
+                                <div>
+                                    <h3
+                                        class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                        Infrastructure</h3>
+                                    <ul class="space-y-1">
+                                        <li><a href="../../services/it-infrastructure-setup.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">IT
+                                                Infrastructure Setup</a></li>
+                                        <li><a href="../../services/on-prem-cloud-setup.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">On-Prem
+                                                & Cloud Setup</a></li>
+                                        <li><a href="../../services/server-network-mgmt.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Server
+                                                & Network Mgmt</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                        Cloud & Hosting</h3>
+                                    <ul class="space-y-1">
+                                        <li><a href="../../services/hosting-management.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Hosting
+                                                Management</a></li>
+                                        <li><a href="../../services/cloud-migration.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Cloud
+                                                Migration</a></li>
+                                        <li><a href="../../services/backup-disaster-recovery.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Backup
+                                                & Disaster Recovery</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                        Managed IT</h3>
+                                    <ul class="space-y-1">
+                                        <li><a href="../../services/it-support-maintenance.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">IT
+                                                Support & Maintenance</a></li>
+                                        <li><a href="../../services/remote-monitoring.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Remote
+                                                Monitoring</a></li>
+                                        <li><a href="../../services/patch-management.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Patch
+                                                Management</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="font-display font-bold text-accent-gold mb-4 uppercase text-xs tracking-widest border-b border-accent-gold/20 pb-2">
+                                        Cybersecurity</h3>
+                                    <ul class="space-y-1">
+                                        <li><a href="../../services/security-assessments.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Security
+                                                Assessments</a></li>
+                                        <li><a href="../../services/firewall-endpoint-protection.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Firewall
+                                                & Endpoint Protection</a></li>
+                                        <li><a href="../../services/identity-access-mgmt.html"
+                                                class="block px-3 py-2 text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-accent-gold hover:bg-gradient-to-r hover:from-accent-gold/10 hover:to-transparent rounded-lg transition-all duration-300">Identity
+                                                Access Mgmt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
+                        href="../../technologies.html">Technologies</a>
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
+                        href="../../industries.html">Industries</a>
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
+                        href="../../about-us.html">About Us</a>
+                    <a class="nav-link font-display text-sm font-bold text-slate-900 dark:text-white hover:text-accent-gold transition-colors"
+                        href="../../careers.html">Careers</a>
+                </nav>
+                <div class="flex items-center gap-6">
+                    <a href="javascript:void(0)" onclick="openContactModal()"
+                        class="hidden lg:flex items-center gap-2 group">
+                        <span
+                            class="font-mono text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white group-hover:text-accent-gold transition-colors">Contact
+                            Us</span>
+                        <span
+                            class="size-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-accent-gold group-hover:border-accent-gold group-hover:text-black transition-all">
+                            <span
+                                class="material-symbols-outlined text-sm text-slate-900 dark:text-white group-hover:text-black">arrow_outward</span>
+                        </span>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Open Mobile Menu"
+                        class="lg:hidden flex items-center justify-center rounded-full bg-black/5 dark:bg-white/5 p-2 text-slate-900 dark:text-white hover:bg-accent-gold hover:text-black transition-all border border-black/10 dark:border-white/10">
+                        <span class="material-symbols-outlined text-xl">menu</span>
+                    </button>
+                </div>
             </div>
-
-            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-                <a href="#nodes"
-                    class="hover:text-[#0f0] hover:underline decoration-[#0f0] underline-offset-4 transition-all">Nodes</a>
-                <a href="#tokenomics"
-                    class="hover:text-[#0f0] hover:underline decoration-[#0f0] underline-offset-4 transition-all">Tokenomics</a>
-                <a href="#roadmap"
-                    class="hover:text-[#0f0] hover:underline decoration-[#0f0] underline-offset-4 transition-all">Roadmap</a>
-            </div>
-
-            <div class="flex gap-4">
-                <button
-                    class="px-6 py-2 border border-[#0f0] text-[#0f0] text-sm hover:bg-[#0f0] hover:text-black transition-all duration-300 font-bold tracking-wider glitch-effect"
-                    data-text="CONNECT_WALLET">
-                    CONNECT_WALLET
+        </header>
+<div id="mobile-menu"
+            class="fixed inset-0 z-[60] bg-background-light dark:bg-background-dark transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col">
+            <div class="flex items-center justify-between p-6 border-b border-black/5 dark:border-white/5">
+                <a href="../../index.html" class="logo-placeholder">
+                    <img alt="auratekk_dark" class="hidden dark:block h-8 w-auto object-contain"
+                        src="../../AURATEKK_DARK.svg" />
+                    <img alt="auratekk_light" class="block dark:hidden h-8 w-auto object-contain"
+                        src="../../AURATEKK_LIGHT.svg" />
+                </a>
+                <button id="mobile-menu-close" aria-label="Close Mobile Menu"
+                    class="p-2 rounded-full border border-black/10 dark:border-white/10 text-slate-900 dark:text-white">
+                    <span class="material-symbols-outlined">close</span>
                 </button>
             </div>
+            <div class="flex-1 overflow-y-auto p-6 space-y-6">
+                <a href="../../index.html"
+                    class="block font-display text-2xl font-bold text-slate-900 dark:text-white">Home</a>
+                <div class="border-b border-black/5 dark:border-white/5 pb-4">
+                    <button
+                        class="flex items-center justify-between w-full font-display text-xl font-bold text-slate-900 dark:text-white mb-4 mobile-accordion-trigger">
+                        Services
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+                    </button>
+                    <div class="hidden space-y-3 pl-4 mobile-accordion-content">
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Web Development
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/web-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Web
+                                    Development</a>
+                                <a href="../../services/wordpress-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">WordPress
+                                    Development</a>
+                                <a href="../../services/ecommerce-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">E-Commerce
+                                    Development</a>
+                                <a href="../../services/custom-cms-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Custom CMS
+                                    Development</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Branding Design
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/ui-ux-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">UI/UX
+                                    Design</a>
+                                <a href="../../services/logo-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Logo
+                                    Design</a>
+                                <a href="../../services/brochure-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Brochure
+                                    Design</a>
+                                <a href="../../services/website-design-dubai.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Website
+                                    Design Dubai</a>
+                                <a href="../../services/branding-design.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Branding</a>
+                                <a href="../../services/social-media-creatives.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Social Media
+                                    Creatives</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Cloud Services
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/cloud-consulting.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Cloud
+                                    Consulting</a>
+                                <a href="../../services/azure-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Azure</a>
+                                <a href="../../services/aws-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">AWS</a>
+                                <a href="../../services/gcp-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">GCP</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Digital
+                                Marketing</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/digital-marketing.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Digital
+                                    Marketing</a>
+                                <a href="../../services/seo-optimization.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">SEO</a>
+                                <a href="../../services/geo-optimization.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">GEO</a>
+                                <a href="../../services/ppc-management.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">PPC</a>
+                                <a href="../../services/video-animation.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Video
+                                    Animation</a>
+                                <a href="../../services/conversion-rate-optimization.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Conversion
+                                    Rate Optimization</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Software
+                                Development</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/custom-software-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Software
+                                    Development</a>
+                                <a href="../../services/devops-services.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">DevOps</a>
+                                <a href="../../services/mvp-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">MVP
+                                    Development</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Mobile App
+                                Development</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/ios-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Mobile App
+                                    Development</a>
+                                <a href="../../services/ios-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">iOS App
+                                    Development</a>
+                                <a href="../../services/wearable-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Wearable App
+                                    Development</a>
+                                <a href="../../services/kotlin-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Kotlin App
+                                    Development</a>
+                                <a href="../../services/golang-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">GoLang App
+                                    Development</a>
+                                <a href="../../services/react-native-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">React Native
+                                    Development</a>
+                                <a href="../../services/flutter-app-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Flutter App
+                                    Development</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Emerging
+                                Technologies</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/generative-ai.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Generative
+                                    AI</a>
+                                <a href="../../services/ar-vr-development.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">AR/VR
+                                    Development</a>
+                                <a href="../../services/iot-solutions.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">IOT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-b border-black/5 dark:border-white/5 pb-4">
+                    <button
+                        class="flex items-center justify-between w-full font-display text-xl font-bold text-slate-900 dark:text-white mb-4 mobile-accordion-trigger">
+                        IT Services
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+                    </button>
+                    <div class="hidden space-y-3 pl-4 mobile-accordion-content">
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Infrastructure
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/it-infrastructure-setup.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">IT
+                                    Infrastructure Setup</a>
+                                <a href="../../services/on-prem-cloud-setup.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">On-Prem &
+                                    Cloud Setup</a>
+                                <a href="../../services/server-network-mgmt.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Server &
+                                    Network Mgmt</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Cloud & Hosting
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/hosting-management.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Hosting
+                                    Management</a>
+                                <a href="../../services/cloud-migration.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Cloud
+                                    Migration</a>
+                                <a href="../../services/backup-disaster-recovery.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Backup &
+                                    Disaster Recovery</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Managed IT</h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/it-support-maintenance.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">IT Support &
+                                    Maintenance</a>
+                                <a href="../../services/remote-monitoring.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Remote
+                                    Monitoring</a>
+                                <a href="../../services/patch-management.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Patch
+                                    Management</a>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent-gold/30 pl-3">
+                            <h4 class="text-sm font-bold text-accent-gold uppercase tracking-wider mb-2">Cybersecurity
+                            </h4>
+                            <div class="space-y-1.5 text-sm">
+                                <a href="../../services/security-assessments.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Security
+                                    Assessments</a>
+                                <a href="../../services/firewall-endpoint-protection.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Firewall &
+                                    Endpoint Protection</a>
+                                <a href="../../services/identity-access-mgmt.html"
+                                    class="block text-slate-600 dark:text-slate-400 hover:text-accent-gold">Identity
+                                    Access Mgmt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../../technologies.html"
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">Technologies</a>
+                <a href="../../industries.html"
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">Industries</a>
+                <a href="../../about-us.html"
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">About Us</a>
+                <a href="../../careers.html"
+                    class="block font-display text-xl font-bold text-slate-900 dark:text-white">Careers</a>
+            </div>
+            <div class="p-6 border-t border-black/5 dark:border-white/5">
+                <a href="javascript:void(0)" onclick="openContactModal()"
+                    class="flex items-center justify-center w-full py-4 bg-accent-gold text-black font-bold uppercase tracking-widest rounded-full">
+                    Contact Us
+                </a>
+            </div>
         </div>
-    </nav>
 
     <!-- Hero Section -->
     <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
@@ -218,6 +911,22 @@
     </footer>
 
     <script src="script.js"></script>
+<div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 backdrop-blur-sm">
+        <div class="absolute inset-0 bg-black/60 dark:bg-black/80" onclick="closeSuccessModal()"></div>
+        <div class="relative w-full max-w-md mx-4 p-8 rounded-2xl border border-white/10 bg-white/10 dark:bg-black/40 backdrop-blur-2xl shadow-2xl transform scale-95 transition-all duration-500">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-accent-gold/20 flex items-center justify-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-accent-gold">check_circle</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-2">Transmission Successful</h3>
+                <p class="text-slate-300 mb-8">Your message has been received. Our agents are analyzing your requirements.</p>
+                <button onclick="closeSuccessModal()" 
+                    class="w-full py-4 bg-accent-gold text-black font-bold uppercase tracking-widest rounded-full hover:shadow-[0_0_20px_rgba(255,215,0,0.4)] transition-all">
+                    Return to site
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
